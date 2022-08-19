@@ -1,0 +1,62 @@
+.container{
+  background: rgb(248, 245, 245);
+  width: max-content;
+  margin: auto;
+  border: 1px solid grey;
+  height: 350px;  
+}
+
+.display{
+  width: 300px;
+  background-color: white;
+  height: 50px;
+  border: 1px solid grey;
+  font-size: 48px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.cols {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+}
+
+.buttons{
+  display:flex;
+  margin: 10px;
+  align-items: center;
+  align-items: stretch;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+button{
+  flex: 25%;
+  font-size: 26px;
+  border: 1px solid grey;
+  width: 70px;
+  padding-top: 10px;
+  margin-top: 10px;
+
+} 
+
+.btn-number,
+.btn-clear,
+.btn-dot {
+  background-color:rgb(244, 240, 240);
+}
+
+.btn-operator {
+  background-color:rgb(224, 219, 219);
+}
+
+.btn-equals {
+  background-color:rgb(102, 135, 224);
+  flex: 80%;
+}
+
+#division {
+  flex: 10%;
+}
