@@ -1,6 +1,8 @@
 
-const buttons = document.querySelectorAll('.btn-number, .btn-operator, .btn-dot, .btn-clear, .btn-equals')
-const display = document.querySelector('.display')
+const buttons = document.querySelectorAll('.btn-number, .btn-operator, .btn-dot, .btn-clear, .btn-equals');
+const display = document.querySelector('.display');
+const equalsButton = document.querySelector('.btn-equals');
+const clearButton = document.querySelector('.btn-clear')
 
 let displayData = "";
 
@@ -9,8 +11,15 @@ buttons.forEach(button => {
 
         const buttonValue = button.getAttribute('data-num');
         displayData += buttonValue;
-        alert("Display is now: " + displayData)
+        display.textContent = displayData;
     })
 })
 
-display.textContent = displayData;
+equalsButton.addEventListener("click", () => {
+  displayData.innerHTML.split(" ");
+});
+
+clearButton.addEventListener('click', () => { 
+  displayData = "";
+  display.textContent = displayData;
+})
